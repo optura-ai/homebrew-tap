@@ -5,21 +5,21 @@
 class Opx < Formula
   desc "CLI for local development at Optura"
   homepage "https://github.com/optura-ai/opx"
-  version "0.0.4"
+  version "0.0.5"
   license "Proprietary"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/optura-ai/opx/releases/download/v0.0.4/opx_0.0.4_darwin_amd64.tar.gz"
-    sha256 "07fd2250e966f9b464b80356f007ed10b48d24735e5f7191dc2dde4897e95f8d"
+    url "https://github.com/optura-ai/homebrew-tap/releases/download/v0.0.5/opx_0.0.5_darwin_amd64.tar.gz"
+    sha256 "afcc408457603ea1856ef313249dbacf89cc776dbe6a608da6d7b003e387f436"
 
     define_method(:install) do
       bin.install "opx"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/optura-ai/opx/releases/download/v0.0.4/opx_0.0.4_darwin_arm64.tar.gz"
-    sha256 "5704652e71090062c7e8f8b60f2a5ee8d979848e1233e3d44d74e0ce9c66f635"
+    url "https://github.com/optura-ai/homebrew-tap/releases/download/v0.0.5/opx_0.0.5_darwin_arm64.tar.gz"
+    sha256 "c23c9b860e13e6d3bcd3b791c767e977b35636f3e136d66904769c5047a93c82"
 
     define_method(:install) do
       bin.install "opx"
